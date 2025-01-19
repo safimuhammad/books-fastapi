@@ -50,17 +50,17 @@ The API will be accessible at `http://localhost:8000`.
 ## API Endpoints
 - **Get All Books**:
     ```http
-    GET /books/get_books?page=1&max_items=10
+    GET v1/books/get_books?page=1&max_items=10
     ```
 
 - **Get a Specific Book**:
     ```http
-    GET /books/get_book/{book_id}
+    GET v1/books/get_book/{book_id}
     ```
 
 - **Create a New Book**:
     ```http
-    POST /books/create_book
+    POST v1/books/create_book
     ```
     **Request Body**:
     ```json
@@ -75,7 +75,7 @@ The API will be accessible at `http://localhost:8000`.
 
 - **Update an Existing Book**:
     ```http
-    PUT /books/update_book/{book_id}
+    PUT v1/books/update_book/{book_id}
     ```
     **Request Body**:
     ```json
@@ -90,7 +90,7 @@ The API will be accessible at `http://localhost:8000`.
 
 - **Delete a Book**:
     ```http
-    DELETE /books/delete_book/{book_id}
+    DELETE v1/books/delete_book/{book_id}
     ```
 
 ## Testing the API
@@ -98,7 +98,7 @@ You can use tools like [curl](https://curl.se/) or [Postman](https://www.postman
 
 **Example**: Create a new book using `curl`:
 ```bash
-curl -X POST "http://localhost:8000/books/create_book" -H "accept: application/json" -H "Content-Type: application/json" -d '{"title":"The Lord of the Rings", "author": "J.R.R. Tolkien", "published_year": 1954, "publisher": "George Allen & Unwin", "description": "An epic fantasy novel."}'
+curl -X POST "http://localhost:8000/v1/books/create_book" -H "accept: application/json" -H "Content-Type: application/json" -d '{"title":"The Lord of the Rings", "author": "J.R.R. Tolkien", "published_year": 1954, "publisher": "George Allen & Unwin", "description": "An epic fantasy novel."}'
 ```
 
 ## License
