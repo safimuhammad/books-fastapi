@@ -37,12 +37,9 @@ Books FastAPI is a RESTful API built with Python’s FastAPI framework, designed
 4. **Configure the Database**:
     - Ensure PostgreSQL is installed and running.
     - Create a new database named `bookdb`.
-    - Update the `DATABASE_URL` in `models.py` with your PostgreSQL credentials.
+    - Update the `DATABASE_URL` in `.env` with your Sqlite credentials.
 
-5. **Create Database Tables**:
-    ```bash
-    python create_tables.py
-    ```
+
 
 ## Running the Application
 Start the Uvicorn server to run the FastAPI application:
